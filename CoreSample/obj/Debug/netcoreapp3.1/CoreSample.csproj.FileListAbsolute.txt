@@ -372,3 +372,4 @@ C:\Users\Kalaiarasy\source\repos\CoreSample\CoreSample\bin\Debug\netcoreapp3.1\r
 C:\Users\Kalaiarasy\source\repos\CoreSample\CoreSample\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Kalaiarasy\source\repos\CoreSample\CoreSample\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Kalaiarasy\source\repos\CoreSample\CoreSample\obj\Debug\netcoreapp3.1\CoreSample.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Kalaiarasy\source\repos\CoreSample\CoreSample\obj\Debug\netcoreapp3.1\Razor\Views\Students\Index.cshtml.g.cs

@@ -1,5 +1,6 @@
 ﻿using CoreSample.Models;
 using CoreSample.Repository;
+using CoreSample.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -17,14 +18,29 @@ namespace CoreSample.Controllers
 
         //}
         private readonly IStudentRepository _repository;
-        public StudentsController(IStudentRepository repository)
+        private readonly IEmailServices _emailServices;
+        public StudentsController(IStudentRepository repository,IEmailServices emailServices)
         {
             _repository = repository;
+            _emailServices = emailServices;
         }
         public IActionResult Index()
         {
+            
             var students = _repository.GetAllStudent();
-            return View();
+            return View(students);
+        }
+
+        public void EmailStudent()
+        {
+            Message message = new Message()
+            {
+            To="Kalai.com",
+            From ="Arasy",
+            Body="dfsdfs"
+            };
+            _emailServices.SendEmail(message);
+            
         }
     }
 }

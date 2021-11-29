@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CoreSample.Models;
 using CoreSample.Repository;
+using CoreSample.Services;
 
 namespace CoreSample
 {
@@ -31,6 +32,7 @@ namespace CoreSample
             });
 
             services.AddScoped<IStudentRepository, StudentRepository>();
+            services.AddSingleton<IEmailServices, EmailServices> ();
             services.AddControllersWithViews();
 
         }
